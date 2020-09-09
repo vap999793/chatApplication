@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeChat Room</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/loginStyle.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="make_center">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <form class="form-container" method="POST" action="http://localhost:4000/home">
+                        <div class="form-group">
+                            <h4 class="text-center font-weight-bold bg-success"><i class="fa fa-whatsapp"
+                                    aria-hidden="true"></i> CodeChat </h4>
+                            <label for="InputEmail1">Username</label>
+                            <input type="text" class="form-control" id="username" name="username"
+                                placeholder="Enter your username" autocomplete="on" required>
+                            <!-- <span id="username" class="text-danger font-weight-bold"></span> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="InputPassword1">Password</label>
+                            <input type="password" class="form-control" id="pass" placeholder="Password"
+                                autocomplete="on" required>
+                            <!-- <span id="passwords" class="text-danger font-weight-bold"></span> -->
+                        </div>
+
+                        <div class="form-control bg-dark">
+                            <label for="room" class="text-light">Room : </label>
+                            <select name="room" id="room">
+                                <option value="Angular" selected>Angular</option>
+                                <option value="React">React</option>
+                                <option value="Vue">Vue</option>
+                                <option value="jQuery">jQuery</option>
+
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block mt-3">Join Room</button>
+                      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="login_page.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
